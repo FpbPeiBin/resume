@@ -18,19 +18,19 @@
 == 开源项目
 
 #cventry(
-  tl: [#gh_repo("https://github.com/")[项目名称]],
+  tl: [#gh_repo("https://github.com/")[QQ音乐]],
   tl_comments: [],
   tr: [#lorem(3)],
 )[
-  - #kouhu(length: 30)
-    - #kouhu(offset: 10, length: 35)
-    - #kouhu(offset: 3, length: 35)
+  - 利用网易云提供的公共API，进行仿QQ音乐网页版的前端开发
+    - 实现的功能主要包括
+    - 
 ]
 
 == 竞赛经历
 
 #cventry(
-  tl: [\<竞赛名称\>],
+  tl: [蔬菜类商品的自动定价与补货决策],
   tr: [2023.02],
 )[
   - Awarded the *???* (*Top ???%* nationwide) in \<year\> *Mathematical Contest in Modeling* (aka CUMCM).

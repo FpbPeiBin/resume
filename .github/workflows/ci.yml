@@ -1,0 +1,38 @@
+permissions:
+  contents: write
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+name: Deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    name: deploy to gh-pages
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - uses: typst-community/setup-typst@v3
+
+      - name: Compile Document
+        run: |
+          mkdir -p ./dist
+          typst compile resume.typ ./dist/resume.pdf --font-path ./fonts
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          publish_dir: ./dist

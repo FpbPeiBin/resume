@@ -18,13 +18,15 @@
   columns: (50%, 50%),
   align: (left, right),
   [
-    #text(size: 16pt, weight: "bold")[#name]
+    #text(size: 16pt, weight: "bold")[#name] \
+    #mail \
+    #gh_link
   ],
   [
-    #mail \
-    #v(-0.3em)
-    #gh_link
-  ]
+    #box[
+      #v(-1.2cm),
+      #image("img/fpb.jpg", width: 2.5cm)
+    ]
+  ],
 )
-// reduce the spacing
-#v(-1.3em)
+#v(-0.8cm)

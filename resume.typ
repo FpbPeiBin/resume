@@ -20,7 +20,7 @@
 #cventry(
   tl: [#gh_repo("https://github.com/")[QQ音乐]],
   tl_comments: [],
-  tr: [#lorem(3)],
+  tr: [2022.05],
 )[
   - 利用网易云音乐提供的NodeJS版API，进行仿QQ音乐网页版UI的*前端原生开发*
     - 主要功能：登录、用户信息页、歌曲搜索、歌曲MV与评论、音乐播放器等

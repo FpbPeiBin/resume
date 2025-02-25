@@ -50,6 +50,7 @@
     ): it => text(
         size: 12pt,
         font: fonts,
+        fill: blue.darken(15%),
         weight: "bold",
         block(
             v(-0.1em) +

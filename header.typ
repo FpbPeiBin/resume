@@ -1,0 +1,30 @@
+#import "@preview/fontawesome:0.2.1": fa-envelope, fa-rss, fa-github
+#import "lib.typ": *
+
+// gh link with icon
+#let gh_link = [
+  #text(baseline: 0.1em)[#fa-github()] #link("https://github.com/FpbPeiBin")[github.com/FpbPeiBin]
+]
+
+#let mail = [
+  #text(baseline: 0.1em)[#fa-envelope()];
+  #ulink("mailto:<your-email>")[\<Your Email\>]
+]
+
+#let name = "冯培彬"
+
+#grid(
+  rows: 1,
+  columns: (50%, 50%),
+  align: (left, right),
+  [
+    #text(size: 16pt, weight: "bold")[#name]
+  ],
+  [
+    #mail \
+    #v(-0.3em)
+    #gh_link
+  ]
+)
+// reduce the spacing
+#v(-1.3em)

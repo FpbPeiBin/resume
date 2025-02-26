@@ -8,7 +8,7 @@
 
 #let mail = [
   #text(baseline: 0.1em)[#fa-envelope()];
-  #ulink("mailto:<your-email>")[\<Your Email\>]
+  #ulink("mailto:1445643707@qq.com")[1445643707\@qq.com]
 ]
 
 #let name = "冯培彬"

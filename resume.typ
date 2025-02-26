@@ -44,7 +44,7 @@
 == 开源项目
 
 #cventry(
-  tl: [#gh_repo("https://github.com/")[QQ音乐]],
+  tl: [#gh_repo("https://github.com/FpbPeiBin/QQMusicProject")[QQ音乐]],
   tl_comments: [],
   tr: [2022.05],
 )[

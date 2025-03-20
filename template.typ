@@ -65,7 +65,7 @@
     show footnote.entry: set text(gray)
 
     set page(
-        margin: (x: 0.9cm, top: 0.5cm, bottom: 0.5cm),
+        margin: (x: 0.9cm, top: 1cm, bottom: 0.5cm),
     )
 
     set par(justify: true, leading: 0.85em)

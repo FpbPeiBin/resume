@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.2.1": fa-envelope, fa-rss, fa-github
+#import "@preview/fontawesome:0.2.1": fa-envelope, fa-rss, fa-github, fa-contact-card
 #import "lib.typ": *
 
 // gh link with icon
@@ -6,9 +6,13 @@
   #text(baseline: 0.1em)[#fa-github()] #link("https://github.com/FpbPeiBin")[github.com/FpbPeiBin]
 ]
 
+#let contact = [
+  #text(baseline: 0.1em)[#fa-contact-card()] 19928844820
+]
+
 #let mail = [
   #text(baseline: 0.1em)[#fa-envelope()];
-  #ulink("mailto:1445643707@qq.com")[1445643707\@qq.com]
+  #ulink("mailto:atlantic.pb.feng@outlook.com")[atlantic.pb.feng\@outlook.com]
 ]
 
 #let name = "冯培彬"
@@ -20,11 +24,11 @@
   [
     #text(size: 16pt, weight: "bold")[#name] \
     #mail \
-    #gh_link
+    #contact
   ],
   [
     #box[
-      #v(-1.2cm),
+      #v(-0.5cm)
       #image("img/fpb.jpg", width: 2.5cm)
     ]
   ],

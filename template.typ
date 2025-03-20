@@ -23,7 +23,7 @@
         }
         + v(-0.2em)
         + content
-        + v(0.5em)
+        + v(1.5em)
     )
 }
 
@@ -65,10 +65,10 @@
     show footnote.entry: set text(gray)
 
     set page(
-        margin: (x: 0.9cm, top: 1cm, bottom: 0.5cm),
+        margin: (x: 0.9cm, top: 1.3cm, bottom: 0.5cm),
     )
 
-    set par(justify: true, leading: 0.85em)
+    set par(justify: true, leading: 1em)
 
     set text(font: fonts, size: 11pt)
 
